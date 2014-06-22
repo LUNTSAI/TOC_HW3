@@ -1,3 +1,10 @@
+/*
+ * author : è”¡å®—å€«
+ * student number : F74006187
+ * purpose : parse the data from the web and 
+ * 			 find the average of real_price that you specify.
+ * */
+
 //import java.util.Map;
 import java.util.regex.*;
 //import java.lang.*;
@@ -38,12 +45,12 @@ public static void main(String[] args) throws JSONException, IOException {
 		
 		int avg = 0, cnt = 0, i;
 		for(i = 0; i < realprice.length(); i++){
-			if(zone.matcher(realprice.getJSONObject(i).getString("¶mÂí¥«°Ï")).find()){
-				if(road.matcher(realprice.getJSONObject(i).getString("¤g¦a°Ï¬q¦ì¸m©Î«Øª«°ÏªùµP")).find()){
-					if((realprice.getJSONObject(i).getInt("¥æ©ö¦~¤ë")) >= ys){
+			if(zone.matcher(realprice.getJSONObject(i).getString("é„‰éŽ®å¸‚å€")).find()){
+				if(road.matcher(realprice.getJSONObject(i).getString("åœŸåœ°å€æ®µä½ç½®æˆ–å»ºç‰©å€é–€ç‰Œ")).find()){
+					if((realprice.getJSONObject(i).getInt("äº¤æ˜“å¹´æœˆ")) >= ys){
 						cnt++;
-						avg += realprice.getJSONObject(i).getInt("Á`»ù¤¸");
-						System.out.println(realprice.getJSONObject(i));
+						avg += realprice.getJSONObject(i).getInt("ç¸½åƒ¹å…ƒ");
+						//System.out.println(realprice.getJSONObject(i));
 					}
 				}
 			}
