@@ -1,7 +1,7 @@
 TOC_HW3
 =======
 
-The source code is put in folder-src.
+
 
 Theory of Computation hw3
 
