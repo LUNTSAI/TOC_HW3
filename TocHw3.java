@@ -1,5 +1,5 @@
 /*
- * author : ½²©v­Û
+ * author : è”¡å®—å€«
  * student number : F74006187
  * purpose : parse the data from the web and 
  * 			 find the average of real_price that you specify.
@@ -40,11 +40,11 @@ public static void main(String[] args) throws JSONException, IOException {
 	    		
 	    		int avg = 0, cnt = 0, i;
 	    		for(i = 0; i < realprice.length(); i++){
-	    			if(zone.matcher(realprice.getJSONObject(i).getString("¶mÂí¥«°Ï")).find()){
-	    				if(road.matcher(realprice.getJSONObject(i).getString("¤g¦a°Ï¬q¦ì¸m©Î«Øª«°ÏªùµP")).find()){
-	    					if((realprice.getJSONObject(i).getInt("¥æ©ö¦~¤ë")) >= ys){
+	    			if(zone.matcher(realprice.getJSONObject(i).getString("é„‰é®å¸‚å€")).find()){
+	    				if(road.matcher(realprice.getJSONObject(i).getString("åœŸåœ°å€æ®µä½ç½®æˆ–å»ºç‰©å€é–€ç‰Œ")).find()){
+	    					if((realprice.getJSONObject(i).getInt("äº¤æ˜“å¹´æœˆ")) >= ys){
 	    						cnt++;
-	    						avg += realprice.getJSONObject(i).getInt("Á`»ù¤¸");
+	    						avg += realprice.getJSONObject(i).getInt("ç¸½åƒ¹å…ƒ");
 	    						//System.out.println(realprice.getJSONObject(i));
 	    					}
 	    				}
@@ -60,8 +60,8 @@ public static void main(String[] args) throws JSONException, IOException {
 	            //System.out.println("Done");   
 		}catch (IOException e){			// exception handler
 			System.out.println("invalid form");
-			System.out.println("correct form : java ¡Vjar TocHw3.jar URL ¶mÂí¥«°Ï ¤g¦a°Ï¬q¦ì¸m©Î«Øª«°ÏªùµP ¥æ©ö¦~¤ë");
-			e.printStackTrace();		// ¿é¥X¿ù»~°T®§ ¨Ã»¡©ú¥¿½T®æ¦¡
+			System.out.println("correct form : java â€“jar TocHw3.jar URL é„‰é®å¸‚å€ åœŸåœ°å€æ®µä½ç½®æˆ–å»ºç‰©å€é–€ç‰Œ äº¤æ˜“å¹´æœˆ");
+			e.printStackTrace();		// è¼¸å‡ºéŒ¯èª¤è¨Šæ¯ ä¸¦èªªæ˜æ­£ç¢ºæ ¼å¼
 		}
     }
 }
